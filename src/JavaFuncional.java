@@ -2,9 +2,6 @@
 
 public class JavaFuncional {
 	
-	public static void main(String[] args) {
-		funcional();
-	}
 	public static void funcional() {
 		
 		// For each
