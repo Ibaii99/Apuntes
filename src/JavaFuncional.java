@@ -32,7 +32,6 @@ public class JavaFuncional {
 		Timer timer = new Timer();	// El timer que repetira la tarea
 		timer.scheduleAtFixedRate(taskNew, 0, 1000); // Asignamos la tarea al timer y ponemos el tiempo segun como querams
 		
-		
 		//En los hilos:
 		//El metodo runnable se puede definir como "() ->" y empezar el metodo con las llaves { y terminarlo }
 		Thread t = new Thread( 
