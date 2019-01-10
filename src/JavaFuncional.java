@@ -1,4 +1,5 @@
-
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class JavaFuncional {
 	
@@ -16,6 +17,7 @@ public class JavaFuncional {
 		
 		// Para no tener que hacer splits ni ostias esto le quita los espacios al string si los tiene
 		ej.trim();
+		
 		
 		//En los hilos:
 		//El metodo runnable se puede definir como "() ->" y empezar el metodo con las llaves { y terminarlo }
