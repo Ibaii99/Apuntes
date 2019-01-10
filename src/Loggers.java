@@ -17,7 +17,9 @@ public class Loggers {
 	}
 	
 	 */
+	
 	private void repaso() throws SecurityException, IOException {
+		
 	// Inicializaci�n de logger
 	Logger logger = Logger.getLogger( getClass().getName() );//myClass.class.getName() or the name you want
 	
@@ -28,6 +30,7 @@ public class Loggers {
 	logger.addHandler(extensionAArchivo);
 	
 	String l = "Prueba de Logger con Java Funcional";
+	
 	/*
 	Level.WARNING;	-> Warning Message
 	Level.INFO;		-> Information message
@@ -36,6 +39,7 @@ public class Loggers {
 	Level.FINER;	-> Without much info/detais
 	Level.FINEST;	-> With 
 	*/
+	
 	logger.log(Level.INFO, "This is a log: ");
 	
 	logger.info("The info you want to log ");

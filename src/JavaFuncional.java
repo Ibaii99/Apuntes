@@ -2,7 +2,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class JavaFuncional {
-	
+	public static void main(String[] args) {
+		funcional();
+	}
 	public static void funcional() {
 		
 		// For each
@@ -17,6 +19,18 @@ public class JavaFuncional {
 		
 		// Para no tener que hacer splits ni ostias esto le quita los espacios al string si los tiene
 		ej.trim();
+		
+		// Para no tener que hacer un hilo que de la hora o que haga lo que sea se puede usar la clase timer
+		// Que es igual que un hilo pero es mas facil.
+		TimerTask taskNew = new TimerTask() { //Tarea que se repetirá periodicamente
+			private int time=0;
+			@Override
+			public void run() {
+				time+=1;
+				System.out.println("Tic, tac... "+time);}
+			};
+		Timer timer = new Timer();	// El timer que repetira la tarea
+		timer.scheduleAtFixedRate(taskNew, 0, 1000); // Asignamos la tarea al timer y ponemos el tiempo segun como querams
 		
 		
 		//En los hilos:
@@ -63,5 +77,4 @@ public class JavaFuncional {
 	
 	interface LambdaFunctionSuma{	void call (int a, int b);	}
 	
-
 }
