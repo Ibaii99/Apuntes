@@ -64,14 +64,15 @@ class Junits {
 	 */
 	@Before
 	void testDespues() {
-		
+		//Asserts
 	}
 	
-	/**
-	 * 
+	/** Para hacer despues de todo, si tendriamos una BD, este sería el punto de cerrarla por ejemplo
+	 *  O para realizar la DESconexion a ella, tiene que ser estático porque tiene que estar 'preparado' antes
+	 *  de que el resto se ejecute, para que pase lo que pase se cierre de esta forma.
 	 */
 	@BeforeAll
 	static void testDespuesDeTodo() {
-		
+		// Asserts
 	}
 }
